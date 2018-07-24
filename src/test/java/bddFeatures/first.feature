@@ -1,12 +1,10 @@
 Feature: Title of your feature
   I want to use this template for my feature file
 
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
+  Scenario: Login to StackOverFlow
+    Given User navigates to StackOverFlow web site
+    When User clicks on login button on main page
+    And User enters valid user_name and password
+    And user clicks on login button
+    Then User should be able to login
 
