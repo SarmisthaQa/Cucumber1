@@ -11,7 +11,8 @@ import cucumber.api.CucumberOptions;
 			glue= {"stepDefs"},
 			monochrome=true,
 			tags= {},
-			plugin= {"pretty","html:target/cucumber","json:target/cucumber.json"}
+				//	plugin= {"html:target/cucumber","json:target/cucumber.json", "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
+			plugin= {"pretty","html:target/cucumber","json:target/cucumber.json", "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
 			
 )
 
